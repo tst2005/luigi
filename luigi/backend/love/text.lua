@@ -12,7 +12,7 @@ local function renderSingle (self, x, y, font, text, color)
     love.graphics.push('all')
     love.graphics.setColor(color or { 0, 0, 0 })
     love.graphics.setFont(font.loveFont)
-    love.graphics.print(text, math.floor(x), math.floor(y))
+    love.graphics.print(tostring(text), math.floor(x), math.floor(y))
     love.graphics.pop()
 
     self.height = font:getLineHeight()

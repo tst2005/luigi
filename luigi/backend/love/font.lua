@@ -47,7 +47,7 @@ function Font:getDescender ()
 end
 
 function Font:getAdvance (text)
-    return (self.loveFont:getWidth(text))
+    return (self.loveFont:getWidth(tostring(text)))
 end
 
 return Font
